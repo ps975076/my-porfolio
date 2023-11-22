@@ -114,48 +114,22 @@ body {
   /* border: yellow 1px solid; */
 }
 
-.textArea {
+.contact {
   position: absolute;
   left: 13%;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.textArea > h1 {
-  color: #fff;
+.contact > h1 {
+  color: rgb(16, 174, 56);
   font-size: 53px;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 550;
 }
 
-.lang {
-  color: rgb(37, 36, 36);
-  letter-spacing: 3px;
+.contact > p {
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-.contactMeBtn {
-  color: rgb(16, 174, 56);
-  font-size: 13px;
-  font-weight: 500;
-  margin-top: 15px;
-  font-family: sans-serif;
-  letter-spacing: 3px;
-  border: 2px solid rgb(16, 174, 56);
-  padding: 10px;
-  width: 120px;
-  cursor: pointer;
-}
-
-.contactMeBtn:hover {
-  background-color: rgb(16, 174, 56);
-  color: rgb(37, 36, 36);
-  font-family: sans-serif;
-}
-
-.contactMeBtn > a {
-  text-decoration: none;
-  color: rgb(37, 36, 36);
+  color: #fff;
+  margin-right: 50px;
 }
