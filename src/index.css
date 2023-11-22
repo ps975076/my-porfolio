@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(20, 93, 147);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 93, 147, 1) 18%,
+    rgba(17, 37, 123, 1) 58%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.container {
+  display: grid;
+  grid-template: "leftSideBar main";
+  grid-template-columns: 100px 1fr;
+  height: 100vh;
+  gap: 3px;
+}
+
+/* Left Side Bar */
+.leftSideBar {
+  grid-area: leftSideBar;
+  height: 100vh;
+  background-color: rgb(30, 29, 29);
+  display: grid;
+  grid-template:
+    "icons "
+    "socialMedia";
+  grid-template-rows: repeat(2, autofit);
+  gap: 3px;
+}
+
+.icons {
+  grid-area: icons;
+  display: grid;
+  grid-template:
+    "homeIcon"
+    "profileIcon"
+    "contactIcon";
+  grid-template-rows: repeat(3, autofit);
+  gap: 1px;
+  height: 170px;
+  margin-top: 20px;
+}
+
+.socialMedia {
+  grid-area: socialMedia;
+  display: grid;
+  grid-template:
+    "linkedInIcon"
+    "gitHubIcon";
+  grid-template-rows: repeat(2, 35px);
+  margin-top: 200px;
+}
+
+.homeIcon {
+  grid-area: homeIcon;
+  height: 50px;
+}
+
+.homeIcon > img {
+  margin-left: 27px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.profileIcon {
+  grid-area: profileIcon;
+  height: 50px;
+}
+
+.profileIcon > img {
+  margin-left: 29px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.contactIcon {
+  grid-area: contactIcon;
+  height: 50px;
+}
+
+.contactIcon > img {
+  margin-left: 27px;
+  margin-top: 5px;
+  fill-opacity: grey;
+  cursor: pointer;
+}
+
+.linkedInIcon {
+  grid-area: linkedInIcon;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.gitHubIcon {
+  grid-area: gitHubIcon;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  cursor: pointer;
+}
+
+/* Main */
+
+.main {
+  grid-area: main;
+  /* border: yellow 1px solid; */
+}
