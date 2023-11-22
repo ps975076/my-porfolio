@@ -54,7 +54,7 @@ body {
     "linkedInIcon"
     "gitHubIcon";
   grid-template-rows: repeat(2, 35px);
-  margin-top: 200px;
+  margin-top: 230px;
 }
 
 .homeIcon {
@@ -112,4 +112,43 @@ body {
 .main {
   grid-area: main;
   /* border: yellow 1px solid; */
+}
+
+.textArea {
+  position: absolute;
+  left: 13%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.textArea > h1 {
+  color: #fff;
+  font-size: 53px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
+}
+
+.lang {
+  color: rgb(37, 36, 36);
+  letter-spacing: 3px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contactMeBtn {
+  color: rgb(16, 174, 56);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 15px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  border: 2px solid rgb(16, 174, 56);
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.contactMeBtn:hover {
+  background-color: rgb(16, 174, 56);
+  color: rgb(37, 36, 36);
 }
