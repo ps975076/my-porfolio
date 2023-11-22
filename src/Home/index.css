@@ -60,10 +60,10 @@ body {
 .homeIcon {
   grid-area: homeIcon;
   height: 50px;
+  margin-left: 27px;
 }
 
 .homeIcon > img {
-  margin-left: 27px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -82,11 +82,11 @@ body {
 .contactIcon {
   grid-area: contactIcon;
   height: 50px;
+  margin-left: 27px;
+  margin-top: 5px;
 }
 
 .contactIcon > img {
-  margin-left: 27px;
-  margin-top: 5px;
   fill-opacity: grey;
   cursor: pointer;
 }
@@ -115,10 +115,10 @@ body {
 }
 
 .textArea {
-  position: absolute;
-  left: 13%;
-  top: 50%;
+  text-align: left;
+  margin-top: 50vh;
   transform: translateY(-50%);
+  margin-left: 40px;
 }
 
 .textArea > h1 {

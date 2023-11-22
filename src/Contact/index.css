@@ -60,6 +60,7 @@ body {
 .homeIcon {
   grid-area: homeIcon;
   height: 50px;
+  margin-left: 27px;
 }
 
 .homeIcon > img {
@@ -114,10 +115,10 @@ body {
 }
 
 .contact {
-  position: absolute;
-  left: 13%;
-  top: 50%;
+  text-align: left;
+  margin-top: 50vh;
   transform: translateY(-50%);
+  margin-left: 40px;
 }
 
 .contact > h1 {
