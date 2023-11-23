@@ -72,10 +72,10 @@ body {
 .profileIcon {
   grid-area: profileIcon;
   height: 50px;
+  margin-left: 29px;
 }
 
 .profileIcon > img {
-  margin-left: 29px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -83,10 +83,10 @@ body {
 .contactIcon {
   grid-area: contactIcon;
   height: 50px;
+  margin-left: 27px;
 }
 
 .contactIcon > img {
-  margin-left: 27px;
   margin-top: 5px;
   fill-opacity: grey;
   cursor: pointer;
@@ -119,6 +119,30 @@ body {
   margin-top: 50vh;
   transform: translateY(-50%);
   margin-left: 40px;
+  opacity: 0;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+
+/* Keyframes for slideInFromLeft animation */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px); /* Slide in from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(70); /* Return to original position */
+  }
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fade in */
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .contact > h1 {

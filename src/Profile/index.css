@@ -72,10 +72,10 @@ body {
 .profileIcon {
   grid-area: profileIcon;
   height: 50px;
+  margin-left: 29px;
 }
 
 .profileIcon > img {
-  margin-left: 29px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -83,10 +83,10 @@ body {
 .contactIcon {
   grid-area: contactIcon;
   height: 50px;
+  margin-left: 27px;
 }
 
 .contactIcon > img {
-  margin-left: 27px;
   margin-top: 5px;
   fill-opacity: grey;
   cursor: pointer;
@@ -112,11 +112,24 @@ body {
 
 .profile-section {
   text-align: left;
-  margin-top: 50vh;
-  transform: translateY(-50%);
+  margin-top: 55vh;
+  transform: translateY(-70%);
   margin-left: 40px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
+/* Keyframes for FadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100);
+  }
+}
 .profile-heading {
   color: rgb(16, 174, 56);
   font-size: 53px;
@@ -188,3 +201,5 @@ body {
   background-color: rgb(16, 174, 56);
   color: rgb(37, 36, 36);
 }
+
+/* Media Queries */
