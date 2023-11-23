@@ -137,7 +137,6 @@ body {
 }
 
 .contactMeBtn {
-  color: rgb(16, 174, 56);
   font-size: 13px;
   font-weight: 500;
   margin-top: 15px;
@@ -149,13 +148,13 @@ body {
   cursor: pointer;
 }
 
+.contactMeBtn > a {
+  text-decoration: none;
+  color: rgb(37, 36, 36);
+}
+
 .contactMeBtn:hover {
   background-color: rgb(16, 174, 56);
   color: rgb(37, 36, 36);
   font-family: sans-serif;
-}
-
-.contactMeBtn > a {
-  text-decoration: none;
-  color: rgb(37, 36, 36);
 }

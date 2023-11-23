@@ -153,12 +153,17 @@ body {
   overflow: hidden;
 }
 
+.contact-form > form > ul > li.name {
+  margin-bottom: 1px;
+}
+
 input[type="text"],
 textarea {
   background-color: rgb(28, 69, 103);
   border: none;
   height: 40px;
   padding: 0 20px;
+  color: #fff;
 }
 
 textarea {
