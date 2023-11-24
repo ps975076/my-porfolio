@@ -211,3 +211,17 @@ textarea {
   background-color: rgb(16, 174, 56);
   color: rgb(37, 36, 36);
 }
+
+/* Media Queries */
+/* For smaller devices (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Adjust grid columns for smaller screens */
+  }
+  .leftSideBar {
+    display: none;
+  }
+  .main {
+    text-align: center; /* Center-align content */
+  }
+}

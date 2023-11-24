@@ -203,3 +203,15 @@ body {
 }
 
 /* Media Queries */
+/* For smaller devices (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Adjust grid columns for smaller screens */
+  }
+  .leftSideBar {
+    display: none;
+  }
+  .main {
+    text-align: center; /* Center-align content */
+  }
+}
